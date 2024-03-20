@@ -5,6 +5,8 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 	{
 		postType: 'tweet',
@@ -12,6 +14,8 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 	{
 		postType: 'tweet',
@@ -19,6 +23,8 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 	{
 		postType: 'tweet',
@@ -26,6 +32,8 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 	{
 		postType: 'post',
@@ -33,6 +41,8 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 	{
 		postType: 'post',
@@ -40,5 +50,7 @@ export const dataPostImage = [
 		likesCount: 1,
 		username: 'hola',
 		image: '.www',
+		isLiked: true,
+		isSaved: false,
 	},
 ];
