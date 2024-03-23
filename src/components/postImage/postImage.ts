@@ -109,11 +109,3 @@ class PostImage extends HTMLElement {
 
 customElements.define('post-image', PostImage);
 export default PostImage;
-
-/*
-Cosas por hacer:
-- OnClick para cambiar el save y el like
-- Ponerle isSaved y isLiked al JSON
-- Terminar el render poniendole las variables
-- Crear una screen e importarle el componente, la interfaz y la data
-*/
