@@ -8,7 +8,7 @@
 		"build": "webpack --watch --mode=production"
 	},
 	"keywords": [],
-	"author": "",
+	"author": " Geraldine Sastoque y Maira Alejandra Hurtado",
 	"license": "ISC",
 	"devDependencies": {
 		"css-loader": "^6.10.0",

@@ -1,4 +1,5 @@
-import poststyles from './postImage';
+import poststyles from './postImage.css';
+
 export enum Attribute {
 	'postType' = 'postType',
 	'description' = 'description',
@@ -103,6 +104,9 @@ class PostImage extends HTMLElement {
 			</section>
   `;
 		}
+		const cssPostImage = this.ownerDocument.createElement('style');
+		cssPostImage.innerHTML = poststyles;
+		this.shadowRoot?.appendChild(cssPostImage);
 
 		let likeBtn = document.getElementById('likeBtn');
 		likeBtn?.addEventListener('click', this.changeLike);

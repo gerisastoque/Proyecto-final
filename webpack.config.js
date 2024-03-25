@@ -2,8 +2,13 @@ const path = require('path');
 
 module.exports = {
 	entry: './src/indexAbuelo.ts',
+	mode: 'development',
 	module: {
 		rules: [
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
 			{
 				test: /\.tsx?$/,
 				use: 'ts-loader',
