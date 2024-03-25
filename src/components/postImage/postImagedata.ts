@@ -40,7 +40,7 @@ export const dataPostImage = [
 		description: 'AJAJAJAJAAJA',
 		likesCount: 1,
 		username: 'hola',
-		image: '.www',
+		image: 'https://i.pinimg.com/564x/08/09/5a/08095a891a2c668646b10975e6ab561e.jpg',
 		isLiked: true,
 		isSaved: false,
 	},

@@ -1,3 +1,13 @@
 * {
-	background-color: antiquewhite;
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	border-radius: 20px;
+	background: #2f60e9;
+	margin: 1%;
+	padding: 2%;
 }

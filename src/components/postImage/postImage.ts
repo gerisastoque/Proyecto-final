@@ -67,7 +67,7 @@ class PostImage extends HTMLElement {
 	render() {
 		let corazon = null;
 		if (this.isLiked) {
-			corazon = 'lleno';
+			corazon = '';
 		} else {
 			corazon = 'vacio';
 		}
@@ -82,8 +82,9 @@ class PostImage extends HTMLElement {
 		if (this.shadowRoot && this.postType == 'post') {
 			this.shadowRoot.innerHTML = `
 			<link rel="stylesheet" href="./postImage.css">
-			<section>
-			//image
+
+			<section class="container">
+			<img src = ${this.image} >
 			<div>
 				<div>
 					<img src = ${corazon} id = "likeBtn">

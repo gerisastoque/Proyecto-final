@@ -11,8 +11,9 @@ class AppContainer extends HTMLElement {
 		if (this.shadowRoot)
 			this.shadowRoot.innerHTML = `
         <h1>Hola mami</h1>
+				<post-image></post-image>
 
-				<main-feed></main-feed>
+				// <main-feed></main-feed>
         `;
 	}
 }
