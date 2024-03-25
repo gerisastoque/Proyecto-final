@@ -1,3 +1,4 @@
+import poststyles from './postImage';
 export enum Attribute {
 	'postType' = 'postType',
 	'description' = 'description',
@@ -67,21 +68,24 @@ class PostImage extends HTMLElement {
 	render() {
 		let corazon = null;
 		if (this.isLiked) {
-			corazon = '';
+			corazon = '../../assest/heart icon.png';
 		} else {
-			corazon = 'vacio';
+			corazon = '../../assest/empty heart icon.png';
 		}
 
 		let save = null;
 		if (this.isSaved) {
-			save = 'lleno'; //imagennnnn
+			save = '../../assest/save icon.png';
 		} else {
-			save = 'vacio';
+			save = '../../assest/empty save icon.png';
 		}
 
 		if (this.shadowRoot && this.postType == 'post') {
 			this.shadowRoot.innerHTML = `
-			<link rel="stylesheet" href="./postImage.css">
+			<style>
+			${poststyles}
+		</style>
+			// <link rel="stylesheet" href="./postImage.css">
 
 			<section class="container">
 			<img src = ${this.image} >
@@ -90,7 +94,7 @@ class PostImage extends HTMLElement {
 					<img src = ${corazon} id = "likeBtn">
 					<img src = ${save} id = "saveBtn">
 				</div>
-				//contador likes
+				<h3> ${this.likesCount}</h3>
 				<div>
 					<p>${this.username}</p>
 					<p>${this.description}</p>
